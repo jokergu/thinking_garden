@@ -5,9 +5,11 @@ theme:
   language: zh
   features:
     - content.code.copy
+    - navigation.tabs
+  custom_dir: overrides
   font:
     text: Noto Sans SC
-    # code: Fira Code
+    code: Fira Code
 
 # 代码块高亮
 markdown_extensions:
@@ -28,3 +30,7 @@ markdown_extensions:
 plugins:
   - search:
       separator: '[\s\u200b\-]'
+  - sys_time_plugin
+
+extra_css:
+  - stylesheets/extra.css
