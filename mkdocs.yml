@@ -18,19 +18,27 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-
-# plugins:
-#   - search:
-#     separator: '[\s\u200b\-]'
-#       # lang:
-#       #   - en
-#       #   - zh
-
+  - admonition  # 提示块
+  - pymdownx.details  # 提示块可折叠
+  # - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist: # 任务列表
+      # clickable_checkbox: true # 网页中可点击
 
 plugins:
   - search:
       separator: '[\s\u200b\-]'
-  - sys_time_plugin
+  # - sys_time_plugin
+  - git-revision-date-localized: 
+      type: date
+      custom_format: "%d %B %Y" 
+      locale: zh
+      enable_creation_date: true 
+  # - recently_added:
+  #     num_articles: 10  # 可根据需要调整显示的文章数量
+
 
 extra_css:
   - stylesheets/extra.css

@@ -11,6 +11,7 @@
     - [ ] 观察者模式
 - [ ] mermaid画图
 - [ ] wifi+ble
+- [ ] 自动分配从机地址
 
 ***
 - [mkdocs如何开启代码高亮](./mkdocs/mkdocs如何开启代码高亮.md)
