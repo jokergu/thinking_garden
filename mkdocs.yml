@@ -10,6 +10,21 @@ theme:
   font:
     text: Noto Sans SC
     code: Fira Code
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 # 代码块高亮
 markdown_extensions:
@@ -21,13 +36,19 @@ markdown_extensions:
   - admonition  # 提示块
   - pymdownx.details  # 提示块可折叠
   # - pymdownx.tabbed
-  - pymdownx.superfences
+  - pymdownx.superfences: # 超级围栏
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          # format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist: # 任务列表
       # clickable_checkbox: true # 网页中可点击
 
 plugins:
+  - blog:
+      post_date_format: short
   - search:
       separator: '[\s\u200b\-]'
   # - sys_time_plugin
@@ -38,6 +59,7 @@ plugins:
       enable_creation_date: true 
   # - recently_added:
   #     num_articles: 10  # 可根据需要调整显示的文章数量
+
 
 
 extra_css:
