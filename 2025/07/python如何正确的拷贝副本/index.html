@@ -16,7 +16,7 @@
     
     
       
-        <title>如何使用MCUViewer+STLink查看MCU变量波形 - Thinking Garden</title>
+        <title>Python如何正确的拷贝副本 - Thinking Garden</title>
       
     
     
@@ -69,11 +69,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#1-mcuviewer" class="md-skip">
-          跳转至
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              如何使用MCUViewer+STLink查看MCU变量波形
+              Python如何正确的拷贝副本
             
           </span>
         </div>
@@ -289,77 +284,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-mcuviewer" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 下载MCUViewer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-jlinkstlinkmcu" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 编译并将固件通过JLink或STLink烧录到MCU中
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-mcuviewer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 打开MCUViewer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-mcuviewer" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 设置MCUViewer
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-var-viewer" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 在Var Viewer中添加需跟踪的变量
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 将需跟踪的变量加入到图表中
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-stopmcuviewer" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. 按STOP按钮启动MCUViewer跟踪变量
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -374,31 +298,38 @@
 
 
 
-  <h1>如何使用MCUViewer+STLink查看MCU变量波形</h1>
+  <h1>Python如何正确的拷贝副本</h1>
 
-<blockquote>
-<p>MCUViewer支持JLink和STLink。</p>
-</blockquote>
-<h2 id="1-mcuviewer">1. 下载MCUViewer</h2>
-<p>进入<a href="https://github.com/klonyyy/MCUViewer">MCUViewer</a>下载。</p>
-<p><img alt="" src="../assets/mcuviewer_download.png" /></p>
-<p>对于windows，解压<code>MCUViewer_Windows.zip</code>并点击<code>MCUViewer-x.x.x-win64.exe</code>安装MCUViewer。</p>
-<h2 id="2-jlinkstlinkmcu">2. 编译并将固件通过JLink或STLink烧录到MCU中</h2>
-<h2 id="3-mcuviewer">3. 打开MCUViewer</h2>
-<p><img alt="" src="../assets/mcuviewer_open.png" /></p>
-<h2 id="4-mcuviewer">4. 设置MCUViewer</h2>
-<p>按下图添加和MCU固件一同编译的<code>.elf</code>文件，并选择使用的仿真器，如STLink。</p>
-<p><img alt="" src="../assets/mcuviewer_config.png" /></p>
-<h2 id="5-var-viewer">5. 在Var Viewer中添加需跟踪的变量</h2>
-<p>添加变量步骤如下图：</p>
-<p><img alt="" src="../assets/mcuviewer_import.png" /></p>
-<p>添加所有需跟踪的变量添加后，按<code>Done</code>返回主界面。</p>
-<p><img alt="" src="../assets/mcuviewer_import_all.png" /></p>
-<h2 id="6">6. 将需跟踪的变量加入到图表中</h2>
-<p>将需跟踪的变量加入到单独的图表组中：</p>
-<p><img alt="" src="../assets/mcuviewer_add_plot.gif" /></p>
-<h2 id="7-stopmcuviewer">7. 按STOP按钮启动MCUViewer跟踪变量</h2>
-<p><img alt="" src="../assets/mcuviewer_run.gif" /></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">work_hours</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;小明&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="s2">&quot;小红&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">]}</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">work_hours</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># {&#39;小明&#39;: [8, 8, 8, 8, 8], &#39;小红&#39;: [8, 8, 8, 8, 8]}</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># 浅拷贝获取工作时长副本</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">temp_work_hours</span> <span class="o">=</span> <span class="n">work_hours</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">temp_work_hours</span><span class="p">[</span><span class="s2">&quot;小明&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;temp_work_hours=&#39;</span><span class="p">,</span> <span class="n">temp_work_hours</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># temp_work_hours= {&#39;小明&#39;: [5, 8, 8, 8, 8], &#39;小红&#39;: [8, 8, 8, 8, 8]}</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;work_hours=&#39;</span><span class="p">,</span> <span class="n">work_hours</span><span class="p">)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1"># work_hours= {&#39;小明&#39;: [5, 8, 8, 8, 8], &#39;小红&#39;: [8, 8, 8, 8, 8]}</span>
+</code></pre></div>
+<p>请看上述例子，在通过<code>temp_work_hours["小明"][0] = 5</code>改变了副本的值后，原本相应的值也被改写了，为什么会这样？</p>
+<p>原因是copy()是浅拷贝，仅拷贝了字典本身及其value的引用。<strong>如果想实现修改副本却不影响原本的效果，可以使用深拷贝<code>copy.deepcopy</code>，将字典本身及其value都拷贝过来</strong>。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">copy</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">work_hours</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;小明&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="s2">&quot;小红&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">]}</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># 深拷贝获取工作时长副本</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">temp_work_hours</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">work_hours</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">temp_work_hours</span><span class="p">[</span><span class="s2">&quot;小明&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;work_hours=&#39;</span><span class="p">,</span> <span class="n">work_hours</span><span class="p">)</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># work_hours= {&#39;小明&#39;: [8, 8, 8, 8, 8], &#39;小红&#39;: [8, 8, 8, 8, 8]}</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;temp_work_hours=&#39;</span><span class="p">,</span> <span class="n">temp_work_hours</span><span class="p">)</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># temp_work_hours= {&#39;小明&#39;: [5, 8, 8, 8, 8], &#39;小红&#39;: [8, 8, 8, 8, 8]}</span>
+</code></pre></div></p>
+<p>可以看到，使用深拷贝后，改变副本不会再影响原本。</p>
 
 
 
@@ -421,7 +352,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年7月5日 16:36:51 UTC">2025年7月5日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年7月6日 16:21:46 UTC">2025年7月6日</span>
   </span>
 
     
@@ -431,7 +362,7 @@
     <span class="md-icon" title="创建日期">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年7月5日 16:36:51 UTC">2025年7月5日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年2月12日 17:29:08 UTC">2025年2月12日</span>
   </span>
 
     
